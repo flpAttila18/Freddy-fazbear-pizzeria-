@@ -1,0 +1,159 @@
+  html,
+  body {
+    overflow-x: hidden;
+
+  }
+
+  .size {
+    width: 8%;
+  }
+
+  .nav-background {
+    /* background-image: url('../assets/nav-background.png'); */
+    background-color: black;
+  }
+
+  .button {
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 5px 0;
+  }
+
+  /* .button{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 0 12px ;
+    box-shadow: 5px 5px 5px 0px black; 
+    border-radius: 20%;
+    transition: transform 0.2s ease ;
+  } */
+
+  button:active {
+    box-shadow: 0px 0px 0px 0px black;
+    transform: scale(0.95);
+  }
+
+  .animatronics {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+.titletxt {
+  border: 3px black dotted;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+  .logo-section img {
+  display: block;
+}
+
+  .animatronicspng {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card {
+    width: 18rem;
+  }
+
+  .cardH6Cls {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .igen {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+
+.nvbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: black;
+}
+
+  .footer {
+    background-color: black;
+    /* sötétpiros Fazbear stílus */
+    color: whitesmoke;
+    padding: 30px 0 10px 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .footer-logo {
+    width: 80px;
+    height: auto;
+  }
+
+  .footer-info {
+    max-width: 600px;
+  }
+
+  .footer-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-info p {
+    margin: 5px 0;
+    line-height: 1.4;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #ffffff33;
+    padding-top: 10px;
+  }
+
+@media (max-width: 991px) {
+  .nvbar .d-flex.flex-column {
+    align-items: center;
+  }
+  .button {
+    width: 80%;
+    margin: 5px 0;
+  }
+}
+
+/* PC: minden egy sorban, gombok jobbra */
+@media (min-width: 992px) {
+  .container-fluid {
+    flex-direction: row !important;
+    align-items: center;
+  }
+  .button {
+    margin: 0 5px;
+  }
+  .button-section {
+    flex-direction: row !important;
+  }
+}
