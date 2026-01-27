@@ -4,8 +4,8 @@ import logo from '../assets/logo.png';
 
 export default function Footer() {
   return (
-    <footer className="footer mt-5">
-      <div className="footer-container">
+    <footer className=" container-fluid footer mt-5">
+      <div className=" ms-5 col-sm-6 ">
         <img src={logo} alt="Fazbear Pizza Logo" className="footer-logo" />
         <div className="footer-info">
           <h4>Fazbear Pizzeria</h4>

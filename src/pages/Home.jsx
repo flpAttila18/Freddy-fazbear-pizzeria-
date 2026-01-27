@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import React from 'react'
 import '../cssfolder/index.css'
 
@@ -8,13 +9,14 @@ import Btn from '../components/Btn'
 import animatronics from '../assets/animatronics.png'
 import Card from '../components/card'
 import freddy from '../assets/freddy.png'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 import H3txt from '../components/H3txt'
 import BigCard from '../components/BigCard'
-import arcade from '../assets/arcadesp.jpg'
+import arcade from '../assets/arkad.png'
 import bonnie from '../assets/bonnie.png'
 import chika from '../assets/chika.png'
 import foxy from '../assets/foxy.png'
+import Navbar from '../components/Navbar'
 
 
 export default function Home() {
@@ -22,38 +24,12 @@ export default function Home() {
 
   return (
     <>
-      <nav className="nvbar navbar p-3 nav-background">
-  <div className="container-fluid d-flex flex-column flex-lg-row align-items-center justify-content-between">
+    
 
-    {/* LOGO */}
-    <div className="d-flex justify-content-center justify-content-lg-start mb-2 mb-lg-0">
-      <Image
-        DivCls="nav"
-        source={logo}
-        Imgcls="size"
-        Alter="fazber logo"
-      />
-    </div>
+      <Navbar/>
 
-    {/* TITLE */}
-    <div className="d-flex justify-content-center flex-grow-1 mb-2 mb-lg-0">
-      <h1 className="titletxt mb-0 text-nowrap">Freddy Fazbear Pizzeria</h1>
-    </div>
 
-    {/* BUTTONS */}
-    <div className="d-flex flex-column flex-lg-row gap-2 align-items-center mt-2 mt-lg-0">
-      <Btn Btnclass="button fs-5 btnClass" btntext="Home" />
-      <Btn Btnclass="button fs-5 btnClass" btntext="Order" />
-      <Btn Btnclass="button fs-5 btnClass" btntext="Parties" />
-      <Btn Btnclass="button fs-5 btnClass" btntext="Book a party" />
-    </div>
-
-  </div>
-</nav>
       <div>
-
-
-
       </div>
       <Image
         DivCls={"animatronics"}
@@ -103,11 +79,13 @@ export default function Home() {
         center={true}
       />
 
+    <div className='d-flex flex-wrap justify-content-center gap-5 mt-4 bcard'>
       <BigCard
         BCsrc={arcade}
         BCh5={"ARCADE MACHINES"}
         BCp1={"You can play the best arcade games "}
       />
+      </div>
 
       <Footer />
 

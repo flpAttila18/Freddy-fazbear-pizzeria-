@@ -5,7 +5,7 @@
   }
 
   .size {
-    width: 8%;
+    width: 3%;
   }
 
   .nav-background {
@@ -14,21 +14,15 @@
   }
 
   .button {
-    border: none;
-    background-color: black;
+    background-color: transparent;
     color: white;
-    margin: 5px 0;
+    border: 1px solid black;
   }
-
-  /* .button{
-    background-color: black;
-    color: white;
-    padding: 15px;
-    margin: 0 12px ;
-    box-shadow: 5px 5px 5px 0px black; 
-    border-radius: 20%;
-    transition: transform 0.2s ease ;
-  } */
+  
+  .button:hover {
+    background-color: white;
+    color: black;
+  }
 
   button:active {
     box-shadow: 0px 0px 0px 0px black;
@@ -134,26 +128,24 @@
     padding-top: 10px;
   }
 
+
+
 @media (max-width: 991px) {
   .nvbar .d-flex.flex-column {
     align-items: center;
   }
   .button {
     width: 80%;
-    margin: 5px 0;
+    margin: 5px 35px;
   }
 }
 
 /* PC: minden egy sorban, gombok jobbra */
 @media (min-width: 992px) {
-  .container-fluid {
-    flex-direction: row !important;
-    align-items: center;
+  .navbar .button {
+    margin: 0 40px;
   }
-  .button {
-    margin: 0 5px;
-  }
+}
   .button-section {
     flex-direction: row !important;
   }
-}
