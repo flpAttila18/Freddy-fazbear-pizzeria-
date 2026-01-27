@@ -17,6 +17,7 @@ import bonnie from '../assets/bonnie.png'
 import chika from '../assets/chika.png'
 import foxy from '../assets/foxy.png'
 import Navbar from '../components/Navbar'
+import pizza from '../assets/pizza.png'
 
 
 export default function Home() {
@@ -24,9 +25,9 @@ export default function Home() {
 
   return (
     <>
-    
 
-      <Navbar/>
+
+      <Navbar />
 
 
       <div>
@@ -79,12 +80,18 @@ export default function Home() {
         center={true}
       />
 
-    <div className='d-flex flex-wrap justify-content-center gap-5 mt-4 bcard'>
-      <BigCard
-        BCsrc={arcade}
-        BCh5={"ARCADE MACHINES"}
-        BCp1={"You can play the best arcade games "}
-      />
+      <div className='d-flex flex-wrap justify-content-center gap-5 mt-4 bcard'>
+        <BigCard
+          BCsrc={arcade}
+          BCh5={"ARCADE MACHINES"}
+          BCp1={"You can play the best arcade games "}
+        />
+
+        <BigCard
+          BCsrc={pizza}
+          BCh5={"Pizzas"}
+          BCp1={"Try the best pizzas in the world!"}
+        />
       </div>
 
       <Footer />
