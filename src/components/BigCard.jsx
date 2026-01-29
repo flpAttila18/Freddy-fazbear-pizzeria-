@@ -1,6 +1,6 @@
-export default function BigCard({ BCsrc, BCalt, BCh5, BCp1, BCp2 }) {
+export default function BigCard({ Onclick,BCsrc, BCalt, BCh5, BCp1, BCp2 }) {
     return (
-        <div className="card bg-dark text-white d-flex ">
+        <div onClick={Onclick} className="card bg-dark text-white d-flex Bcard ">
             <img className="card-img" src={BCsrc} alt={BCalt} />
             <div className="card-img-overlay">
                 <h5 className="card-title">{BCh5}</h5>

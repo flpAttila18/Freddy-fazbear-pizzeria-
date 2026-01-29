@@ -1,12 +1,12 @@
 import logo from '../assets/logo.png'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate  } from 'react-router-dom'
 
 export default function Navbar() {
     const navigate = useNavigate()
     return (
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
             <div className="container-fluid">
-                <img src={logo} alt="logo" className="navbar-brand size" />
+                <img onClick={()=>navigate('/')} src={logo} alt="logo" className="navbar-brand size" />
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>

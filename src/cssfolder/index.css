@@ -6,8 +6,11 @@
 
   .size {
     width: 3%;
+    cursor: pointer;
   }
 
+  
+  
   .nav-background {
     /* background-image: url('../assets/nav-background.png'); */
     background-color: black;
@@ -128,6 +131,25 @@
     padding-top: 10px;
   }
 
+  .Bcard{
+    cursor: pointer;
+  }
+
+  
+
+  @media (max-width:574px){
+    .cardmarginp{
+    margin-top: 350px;
+  }
+    .footermargin{
+    margin-top: 350px;
+  }
+  }
+
+
+
+  
+  
 
 
 @media (max-width: 991px) {
@@ -149,3 +171,5 @@
   .button-section {
     flex-direction: row !important;
   }
+
+  

@@ -1,0 +1,56 @@
+[{
+    "id": "1", 
+    "name": "Freddy’s Classic Cheese",
+    "price": "10$",
+    "img":"/jsonlists/pizzas/1.jpg"
+
+},
+{
+   "id": "2", 
+    "name": "Bonnie’s Backstage BBQ",
+    "price": "10$",
+    "img":"/jsonlists/pizzas/3.jpg" 
+},
+{
+   "id": "3", 
+    "name": "Chica’s Party Platter Pizza",
+    "price": "10$",
+    "img":"/jsonlists/pizzas/2.jpg" 
+},
+{
+   "id": "4", 
+    "name": "Foxy’s Pirate Pepperoni",
+    "price": "10$",
+    "img":"/jsonlists/pizzas/3.jpg" 
+},
+{
+   "id": "5", 
+    "name": "Arcade Combo Pizza",
+    "price": "9$",
+    "img":"/jsonlists/pizzas/2.jpg" 
+},
+{
+   "id": "6", 
+    "name": "Showtime Veggie Delight",
+    "price": "12$",
+    "img":"/jsonlists/pizzas/1.jpg" 
+},
+{
+   "id": "7", 
+    "name": "Party Room Pepperoni",
+    "price": "10$",
+    "img":"/jsonlists/pizzas/3.jpg" 
+},
+{
+   "id": "8", 
+    "name": "Happy Fazbear Family Pizza",
+    "price": "11$",
+    "img":"/jsonlists/pizzas/1.jpg" 
+},
+{
+   "id": "9", 
+    "name": "Pizza Pal Power-Up",
+    "price": "10$",
+    "img":"/jsonlists/pizzas/2.jpg" 
+}
+]

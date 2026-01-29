@@ -6,7 +6,8 @@ import './cssfolder/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './pages/Home.jsx'
 import Order from './pages/Order.jsx'  
-
+import Pizzas from './pages/pizzas.jsx'
+import Animatronics from './pages/Animatronics.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -15,6 +16,8 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/order' element={<Order />} />
+        <Route path='/pizzas' element={<Pizzas/>}/>
+        <Route path='/Animatronics' element={<Animatronics/>}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>,

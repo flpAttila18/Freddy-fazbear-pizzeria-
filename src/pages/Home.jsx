@@ -18,12 +18,23 @@ import chika from '../assets/chika.png'
 import foxy from '../assets/foxy.png'
 import Navbar from '../components/Navbar'
 import pizza from '../assets/pizza.png'
-
+import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 export default function Home() {
 
+  const [animatronBtn, setAnimatronBtn] = useState(0)
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    console.log(animatronBtn)
+  })
 
   return (
+
+
+
     <>
 
 
@@ -50,6 +61,10 @@ export default function Home() {
           imgSrc={bonnie}
           cardH5Txt={"Bonnie"}
           cardPTxt={"the best solo guitarist "}
+            Onclick={() => {
+            setAnimatronBtn(1)
+            navigate('/Animatronics', { state: { animatron: 1 } })
+          }}
           cardBtntXT={"who is Bonnie ?"}
         />
 
@@ -57,6 +72,10 @@ export default function Home() {
           imgSrc={freddy}
           cardH5Txt={"Freddy Fazbear"}
           cardPTxt={"the best lead singer of all time "}
+            Onclick={() => {
+            setAnimatronBtn(2)
+            navigate('/Animatronics', { state: { animatron: 2 } })
+          }}
           cardBtntXT={"who is Freddy ?"}
         />
 
@@ -64,6 +83,10 @@ export default function Home() {
           imgSrc={chika}
           cardH5Txt={"Chica"}
           cardPTxt={"the best daning chiken "}
+            Onclick={() => {
+            setAnimatronBtn(3)
+            navigate('/Animatronics', { state: { animatron: 3 } })
+          }}
           cardBtntXT={"who is Chica ?"}
         />
 
@@ -71,6 +94,10 @@ export default function Home() {
           imgSrc={foxy}
           cardH5Txt={"Foxy"}
           cardPTxt={"the scariest pirate on the seven seas"}
+          Onclick={() => {
+            setAnimatronBtn(4)
+            navigate('/Animatronics', { state: { animatron: 4 } })
+          }}
           cardBtntXT={"who is Foxy ?"}
         />
       </div>
@@ -82,12 +109,14 @@ export default function Home() {
 
       <div className='d-flex flex-wrap justify-content-center gap-5 mt-4 bcard'>
         <BigCard
+          Onclick={""}
           BCsrc={arcade}
           BCh5={"ARCADE MACHINES"}
           BCp1={"You can play the best arcade games "}
         />
 
         <BigCard
+          Onclick={() => navigate('/Pizzas')}
           BCsrc={pizza}
           BCh5={"Pizzas"}
           BCp1={"Try the best pizzas in the world!"}
@@ -98,6 +127,12 @@ export default function Home() {
 
 
     </>
+
+
   )
+
+
+
+
 }
 
