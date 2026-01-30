@@ -15,11 +15,8 @@ export default function Navbar() {
                         <li className="nav-item">
                             <button onClick={()=>navigate('/order')} className="nav-link pe-auto">order</button>
                         </li>
-                        <li class="nav-item">
-                            <button className="nav-link pe-auto" href="#">parties</button>
-                        </li>
                         <li className="nav-item">
-                            <button className="nav-link pe-auto" href="#">Book a party</button>
+                            <button className="nav-link pe-auto" onClick={()=>navigate('/BookaParty')} >Book a party</button>
                         </li>
                     </ul>
                 </div>

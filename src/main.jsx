@@ -8,7 +8,7 @@ import Home from './pages/Home.jsx'
 import Order from './pages/Order.jsx'  
 import Pizzas from './pages/pizzas.jsx'
 import Animatronics from './pages/Animatronics.jsx'
-
+import BookaParty from './pages/BookaParty.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,6 +18,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/order' element={<Order />} />
         <Route path='/pizzas' element={<Pizzas/>}/>
         <Route path='/Animatronics' element={<Animatronics/>}/>
+        <Route path='/BookaParty' element={<BookaParty/>}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>,
