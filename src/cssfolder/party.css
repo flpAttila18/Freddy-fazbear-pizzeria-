@@ -1,0 +1,13 @@
+.page-bg{
+    min-height: 100vh;
+    background-image: url("../assets/bookbck.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:574px){
+    .page-bg{
+        background-image: url("../assets/partybcphone.png");
+    }
+}

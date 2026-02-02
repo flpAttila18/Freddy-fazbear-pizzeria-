@@ -9,8 +9,13 @@ import liveactionshow from '../assets/liveactionshow.png'
 import arcadeparty from '../assets/arcadeparty.png'
 import birthdayparty from '../assets/birthdayparty.png'
 import Footer from "../components/Footer";
+import { Navigate, useNavigate } from "react-router-dom";
+import { useState } from "react";
+
 
 export default function BookaParty(){
+    const navigate = useNavigate()
+    const [party , setParty] = useState()
     return(
         <>
         <Navbar/>
@@ -29,7 +34,10 @@ export default function BookaParty(){
             imgAlt={"ultimate pizza party"}
             cardH5Txt={"Ultimate pizza party"} 
             cardPTxt={"70$"}
-            Onclick={""}
+            Onclick={()=>navigate('/parties', {
+                state:{party :"ultimate"}
+            })
+            }
             cardBtntXT={"BOOK"}
             />
             <Card
@@ -37,7 +45,10 @@ export default function BookaParty(){
             imgAlt={"liveactionshow"}
             cardH5Txt={"Live action animatronic show"} 
             cardPTxt={"79$"}
-            Onclick={""}
+             Onclick={()=>navigate('/parties', {
+                state:{party :"live"}
+            })
+            }
             cardBtntXT={"Book"}
             />
             <Card
@@ -45,7 +56,10 @@ export default function BookaParty(){
             imgAlt={"arcadeparty"}
             cardH5Txt={"Arcade Party"} 
             cardPTxt={"60$"}
-            Onclick={""}
+             Onclick={()=>navigate('/parties', {
+                state:{party :"arcade"}
+            })
+            }
             cardBtntXT={"Book"}
             />
             <Card
@@ -53,7 +67,10 @@ export default function BookaParty(){
             imgAlt={"birthdayparty"}
             cardH5Txt={"Birthday party"} 
             cardPTxt={"99$"}
-            Onclick={""}
+             Onclick={()=>navigate('/parties', {
+                state:{party :"bday"}
+            })
+            }
             cardBtntXT={"Book"}
             />
         </div>
@@ -61,5 +78,8 @@ export default function BookaParty(){
         <Footer/>
 
         </>
+       
     )
+     console.log(party);
+        
 }
